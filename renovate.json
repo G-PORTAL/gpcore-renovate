@@ -1,0 +1,40 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "groupName": "GPCORE packages",
+      "groupSlug": "gpcore",
+      "matchDatasources": [
+        "go"
+      ],
+      "matchPackagePrefixes": [
+        "buf.build/gen/go/gportal/gpcore"
+      ]
+    },
+    {
+      "groupName": "GitHub actions",
+      "groupSlug": "github-actions",
+      "matchPackagePrefixes": [
+        "actions/"
+      ]
+    },
+    {
+      "groupName": "{{manager}} minor dependencies",
+      "groupSlug": "{{manager}}-minor-deps",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    }
+  ]
+}
