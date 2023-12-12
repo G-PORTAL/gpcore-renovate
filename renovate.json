@@ -4,6 +4,7 @@
     "config:base"
   ],
   "cloneSubmodules": true,
+  "dependencyDashboard": false,
   "packageRules": [
     {
       "groupName": "GPCORE Go packages",
