@@ -12,7 +12,9 @@
       ],
       "matchPackagePrefixes": [
         "buf.build/gen/go/gportal/gpcore"
-      ]
+      ],
+      "automerge": true,
+      "automergeType": "branch"
     },
     {
       "groupName": "GitHub actions",
