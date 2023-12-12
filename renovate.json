@@ -23,7 +23,6 @@
     },
     {
       "groupName": "{{manager}} minor dependencies",
-      "groupSlug": "{{manager}}-minor-deps",
       "matchPackagePatterns": [
         "*"
       ],
