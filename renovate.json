@@ -3,10 +3,11 @@
   "extends": [
     "config:base"
   ],
+  "cloneSubmodules": true,
   "packageRules": [
     {
-      "groupName": "GPCORE packages",
-      "groupSlug": "gpcore",
+      "groupName": "GPCORE Go packages",
+      "groupSlug": "gpcore-go",
       "matchDatasources": [
         "go"
       ],
@@ -15,6 +16,16 @@
       ],
       "automerge": true,
       "automergeType": "branch"
+    },
+    {
+      "groupName": "GPORTAL npm packages",
+      "groupSlug": "gportal-npm",
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackagePrefixes": [
+        "@gportal/"
+      ]
     },
     {
       "groupName": "GitHub actions",
@@ -31,8 +42,7 @@
       "matchUpdateTypes": [
         "minor",
         "patch",
-        "digest",
-        "pin"
+        "digest"
       ]
     }
   ]
